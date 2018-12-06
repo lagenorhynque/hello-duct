@@ -1,0 +1,12 @@
+{:duct.core/project-ns  hello-duct
+ :duct.core/environment :production
+
+ :duct.module/logging {}
+ :duct.module.web/api {}
+ :duct.module/sql {}
+
+ :duct.module/ataraxy
+ {[:get "/example"] [:example]}
+
+ :hello-duct.handler/example
+ {:db #ig/ref :duct.database/sql}}
