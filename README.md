@@ -67,4 +67,4 @@ lein test
 
 ## Legal
 
-Copyright © 2018 FIXME
+Copyright © 2019 FIXME
