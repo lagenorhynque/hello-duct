@@ -4,10 +4,10 @@
   :min-lein-version "2.0.0"
   :dependencies [[org.clojure/clojure "1.10.0"]
                  [duct/core "0.7.0"]
+                 [duct/module.ataraxy "0.3.0"]
                  [duct/module.logging "0.4.0"]
-                 [duct/module.web "0.7.0"]
-                 [duct/module.ataraxy "0.3.0"]]
-  :plugins [[duct/lein-duct "0.11.2"]]
+                 [duct/module.web "0.7.0"]]
+  :plugins [[duct/lein-duct "0.12.0"]]
   :main ^:skip-aot hello-duct.main
   :resource-paths ["resources" "target/resources"]
   :prep-tasks     ["javac" "compile" ["run" ":duct/compiler"]]
@@ -21,5 +21,5 @@
    :project/dev  {:source-paths   ["dev/src"]
                   :resource-paths ["dev/resources"]
                   :dependencies   [[integrant/repl "0.3.1"]
-                                   [eftest "0.5.4"]
+                                   [eftest "0.5.7"]
                                    [kerodon "0.9.0"]]}})
